@@ -5733,11 +5733,11 @@ class Ui_MainWindow(object):
 
         self.retranslateUi(MainWindow)
 
-        self.tabWidget.setCurrentIndex(3)
-        self.tabWidget_2.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget_2.setCurrentIndex(0)
         self.tabWidget_3.setCurrentIndex(0)
         self.tabWidget_4.setCurrentIndex(2)
-        self.tabWidget_5.setCurrentIndex(1)
+        self.tabWidget_5.setCurrentIndex(0)
         self.tabWidget_6.setCurrentIndex(1)
 
 
@@ -6590,7 +6590,7 @@ class Ui_MainWindow(object):
         self.checkBox_336.setText(QCoreApplication.translate("MainWindow", u"60 kph", None))
         self.checkBox_336.setProperty(u"test_metadata", QCoreApplication.translate("MainWindow", u"60", None))
         self.groupBox_76.setTitle(QCoreApplication.translate("MainWindow", u"CCRm AEB", None))
-        self.groupBox_76.setProperty(u"test_metadata", QCoreApplication.translate("MainWindow", u"CCRs_AEB", None))
+        self.groupBox_76.setProperty(u"test_metadata", QCoreApplication.translate("MainWindow", u"CCRm_AEB", None))
         self.groupBox_77.setTitle(QCoreApplication.translate("MainWindow", u"-50%", None))
         self.groupBox_77.setProperty(u"test_metadata", QCoreApplication.translate("MainWindow", u"150", None))
         self.checkBox_343.setText(QCoreApplication.translate("MainWindow", u"30 kph", None))

@@ -45,7 +45,7 @@
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_ped">
        <attribute name="title">
@@ -55,7 +55,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_2">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_ped_crossing">
            <attribute name="title">
@@ -8394,7 +8394,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_5">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_c2c_crossing">
            <attribute name="title">
@@ -11653,7 +11653,7 @@
                <string>CCRm AEB</string>
               </property>
               <property name="test_metadata" stdset="0">
-               <string>CCRs_AEB</string>
+               <string>CCRm_AEB</string>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_20">
                <item>
