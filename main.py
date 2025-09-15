@@ -1,6 +1,7 @@
 import sys
 from pathlib import Path
 from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox, QFileDialog, QCheckBox, QButtonGroup
+from PySide6.QtGui import QShortcut, QKeySequence
 from main_window import Ui_MainWindow  # this class is defined in the generated file
 import json
 import mme_processor
@@ -14,13 +15,24 @@ class MainWindow(QMainWindow):
         with open("vru.json", "r", encoding="utf-8") as f:
             self.vru_table = json.load(f)
 
+        self.vehicle_spec_file = Path("vehicle_spec.txt")
+
+        with open(self.vehicle_spec_file, "r", encoding="utf-8") as file:
+            spec_file_content = file.read()
+
+        self.ui.textbox_vehicle_spec.setPlainText(spec_file_content)
+
         self.ui.button_group = QButtonGroup()
         self.ui.button_group.addButton(self.ui.radio_car)
         self.ui.button_group.addButton(self.ui.radio_van)
         self.ui.button_group.addButton(self.ui.radio_truck)
 
+        self.shortcut_h = QShortcut(QKeySequence("Ctrl+A"), self)
+        self.shortcut_h.activated.connect(self.select_all)
+
         self.ui.create_folders_button.clicked.connect(self.button_pressed)
-        self.ui.select_all_button.clicked.connect(self.select_all)
+        self.ui.save_spec_button.clicked.connect(self.save_spec_file)
+
 
     def get_tab_name(self,checkbox):
         tab_widget = self.ui.tabWidget
@@ -33,14 +45,18 @@ class MainWindow(QMainWindow):
             parent = parent.parent()
 
         return(tab_name)
-    
+
     def select_all(self):
         checkboxes = self.findChildren(QCheckBox)
 
         for checkbox in checkboxes:
             checkbox.setChecked(True)
 
-
+    def save_spec_file(self):
+        with open(self.vehicle_spec_file, "w", encoding="utf-8") as file:
+            textbox_content = self.ui.textbox_vehicle_spec.toPlainText()
+            file.write(textbox_content)
+        QMessageBox.information(self, "vehicle_spec.txt", "The file was correctly saved.")
 
     def button_pressed(self):
         if self.ui.textbox_model.text().strip() == "" or \
@@ -50,26 +66,22 @@ class MainWindow(QMainWindow):
              QMessageBox.warning(self, "Warning", "Some of the specifications are missing")
              return
 
-        vehicle_spec_file = Path("vehicle_spec.txt")
-
+        #vehicle_spec_file = Path("vehicle_spec.txt")
         #remove the spec check
-        if vehicle_spec_file.is_file():
-            QMessageBox.warning(self, "Warning", "Could not find Vehicle_spec.txt")
-            vehicle_spec_path, _ = QFileDialog.getOpenFileName(self, "Select vehicle_spec.txt", "", "Text Files (*.txt)")
-            vehicle_spec_file = Path(vehicle_spec_path)
-            if not vehicle_spec_file.is_file():
-                QMessageBox.warning(self, "Warning", "No file was selected")
-                return
 
         model = self.ui.textbox_model.text().strip()
         year = self.ui.textbox_year.text().strip()
         oem = self.ui.textbox_oem.text().strip()
         encap_number = self.ui.textbox_number.text().strip()
 
+
+        main_folder = Path(QFileDialog.getExistingDirectory(None, "Select where you want the folder to be created: "))
+
+
         folders_name_root =  year + "-" + oem + "-" + encap_number
 
         parent_folder_name =folders_name_root + "-" + model
-        parent_folder = Path(parent_folder_name)
+        parent_folder = main_folder / parent_folder_name
         parent_folder.mkdir(exist_ok = True)
 
         aebc_folder_name =folders_name_root + "-AEBC"
@@ -116,7 +128,7 @@ class MainWindow(QMainWindow):
                 case _:
                     print("no tab was found.")
 
-            folder_name = "" 
+            folder_name = ""
 
             metadata = [checkbox.property("test_metadata")]
             parent = checkbox.parent()
@@ -149,26 +161,26 @@ class MainWindow(QMainWindow):
 
                 elif test_name.startswith("CCC") or test_name.startswith("CCFt"):
                     folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1] + "GVT"
-                    vut_speed = metadata[2] 
+                    vut_speed = metadata[2]
                     target_speed = metadata[1]
                     target_type = "GVT"
-                     
-                elif test_name.startswith("CMFt"): 
+
+                elif test_name.startswith("CMFt"):
                     folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1] + "GVT"
-                    vut_speed = metadata[2] 
+                    vut_speed = metadata[2]
                     target_speed = metadata[1]
                     target_type = "EMT"
-                     
+
                 elif test_name.startswith("CCRs"):
                     folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1]
                     vut_speed = metadata[2]
                     target_speed = 0
                     target_type = "GVT"
-                     
+
                 elif test_name.startswith("CCRm"):
                     folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1]
                     vut_speed = metadata[2]
-                    target_speed = 20 
+                    target_speed = 20
                     target_type = "GVT"
 
                 elif test_name.startswith("ELK") and active_folder == aebm_folder:
@@ -178,7 +190,7 @@ class MainWindow(QMainWindow):
                         vut_speed = 50
                     elif target_speed == 80:
                         vut_speed = 72
-                    
+
                     lateral_speed = metadata[2]
 
                     target_type = "EMT"
@@ -186,44 +198,44 @@ class MainWindow(QMainWindow):
                 else:
                     #TODO errore
                     print("ERRORE")
-                    
+
 
             elif len(metadata) == 2:
                 folder_name = metadata[0] + "_" + metadata[1]
-                
+
                 if test_name.startswith("CCRb"):
                     vut_speed = 50
-                    target_speed = 50 
+                    target_speed = 50
                     target_type = "GVT"
 
                 elif test_name.startswith("CCFhol") or test_name.startswith("CCFhos") :
                     vut_speed = int(metadata[1])
-                    target_speed = int(metadata[1]) 
+                    target_speed = int(metadata[1])
                     target_type = "GVT"
-                     
+
                 elif test_name.startswith("CMRb"):
                     vut_speed = 50
-                    target_speed = 50 
+                    target_speed = 50
                     target_type = "EMT"
 
                 elif test_name.startswith("CMRs"):
                     vut_speed = int(metadata[1])
-                    target_speed = 0 
+                    target_speed = 0
                     target_type = "EMT"
-                
+
                 elif active_folder == aebm_folder and test_name.startswith("ELK_ONC"):
-                    vut_speed = 72 
-                    target_speed = 72 
+                    vut_speed = 72
+                    target_speed = 72
                     target_type = "EMT"
                     lateral_speed = metadata[1]
-                
+
                 elif active_folder == lss_folder and not "GVT" in metadata[1]:
-                    vut_speed = 72 
+                    vut_speed = 72
                     target_type = "NVT"
                     lateral_speed = metadata[1].split("_")[0]
 
                 elif active_folder == lss_folder and "GVT" in metadata[1]:
-                    vut_speed = 72 
+                    vut_speed = 72
                     target_type = "GVT"
                     lateral_speed = metadata[1].split("_")[0]
                 else:
@@ -236,7 +248,7 @@ class MainWindow(QMainWindow):
             #veihcle_type_checkbox = self.ui.button_group.checkedButton()
             #folder_name = veihcle_type_checkbox.property("test_metadata") + folder_name[2:]
 
- 
+
             folder_name = encap_number + "_" + folder_name
 
             folder_name = folder_name + "-01"
@@ -250,14 +262,16 @@ class MainWindow(QMainWindow):
             movie_path = test_path / "Movie"
             movie_path.mkdir(parents=True, exist_ok=True)
 
-            mme_file_lines = mme_processor.mmefile_creator(vehicle_spec_file, 
+            mme_file_lines = mme_processor.mmefile_creator(self.vehicle_spec_file,
                                               model, folder_name, test_name,test_identifier,
                                               vut_speed, lateral_speed, target_speed, target_type)
 
-            with open(test_path / folder_name + ".mme", "w", encoding="utf-8") as file:
-                file.writelines(mme_file_lines)
+            with open(test_path / (folder_name + ".mme"), "w", encoding="utf-8") as file:
+                for line in mme_file_lines:
+                    file.write(line + "\n")
 
-            print(folder_name)
+        QMessageBox.information(self, "Euro NCAP foldering", "The folders were created correctly.")
+
 
 
 #TODO understand how the dooring works

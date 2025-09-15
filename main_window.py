@@ -17,9 +17,9 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QPalette, QPixmap, QRadialGradient, QTransform)
 from PySide6.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
     QHBoxLayout, QLabel, QLayout, QLineEdit,
-    QMainWindow, QPushButton, QRadioButton, QSizePolicy,
-    QSpacerItem, QStatusBar, QTabWidget, QVBoxLayout,
-    QWidget)
+    QMainWindow, QPlainTextEdit, QPushButton, QRadioButton,
+    QSizePolicy, QSpacerItem, QStatusBar, QTabWidget,
+    QVBoxLayout, QWidget)
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -35,11 +35,10 @@ class Ui_MainWindow(object):
         MainWindow.setMaximumSize(QSize(1060, 785))
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
-        self.horizontalLayout = QHBoxLayout(self.centralwidget)
-        self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.tabWidget = QTabWidget(self.centralwidget)
         self.tabWidget.setObjectName(u"tabWidget")
         self.tabWidget.setEnabled(True)
+        self.tabWidget.setGeometry(QRect(21, 9, 1017, 746))
         sizePolicy.setHeightForWidth(self.tabWidget.sizePolicy().hasHeightForWidth())
         self.tabWidget.setSizePolicy(sizePolicy)
         self.tab_ped = QWidget()
@@ -5655,6 +5654,33 @@ class Ui_MainWindow(object):
         self.gridLayout_7.addWidget(self.tabWidget_6, 0, 0, 1, 1)
 
         self.tabWidget.addTab(self.tab_lss, "")
+        self.tab_vehicle_spec = QWidget()
+        self.tab_vehicle_spec.setObjectName(u"tab_vehicle_spec")
+        self.verticalLayout_91 = QVBoxLayout(self.tab_vehicle_spec)
+        self.verticalLayout_91.setObjectName(u"verticalLayout_91")
+        self.textbox_vehicle_spec = QPlainTextEdit(self.tab_vehicle_spec)
+        self.textbox_vehicle_spec.setObjectName(u"textbox_vehicle_spec")
+        self.textbox_vehicle_spec.setMinimumSize(QSize(720, 570))
+        self.textbox_vehicle_spec.setMaximumSize(QSize(720, 570))
+        font2 = QFont()
+        font2.setFamilies([u"Courier New"])
+        font2.setPointSize(16)
+        font2.setStyleStrategy(QFont.PreferAntialias)
+        self.textbox_vehicle_spec.setFont(font2)
+
+        self.verticalLayout_91.addWidget(self.textbox_vehicle_spec, 0, Qt.AlignmentFlag.AlignHCenter)
+
+        self.save_spec_button = QPushButton(self.tab_vehicle_spec)
+        self.save_spec_button.setObjectName(u"save_spec_button")
+        self.save_spec_button.setMinimumSize(QSize(250, 71))
+        self.save_spec_button.setMaximumSize(QSize(250, 71))
+        font3 = QFont()
+        font3.setPointSize(16)
+        self.save_spec_button.setFont(font3)
+
+        self.verticalLayout_91.addWidget(self.save_spec_button, 0, Qt.AlignmentFlag.AlignHCenter)
+
+        self.tabWidget.addTab(self.tab_vehicle_spec, "")
         self.tab_spec = QWidget()
         self.tab_spec.setObjectName(u"tab_spec")
         self.gridLayout = QGridLayout(self.tab_spec)
@@ -5677,9 +5703,7 @@ class Ui_MainWindow(object):
         self.create_folders_button.setObjectName(u"create_folders_button")
         self.create_folders_button.setMinimumSize(QSize(250, 50))
         self.create_folders_button.setMaximumSize(QSize(250, 50))
-        font2 = QFont()
-        font2.setPointSize(16)
-        self.create_folders_button.setFont(font2)
+        self.create_folders_button.setFont(font3)
 
         self.gridLayout_2.addWidget(self.create_folders_button, 2, 0, 1, 1, Qt.AlignmentFlag.AlignHCenter)
 
@@ -5693,7 +5717,7 @@ class Ui_MainWindow(object):
         self.label.setObjectName(u"label")
         self.label.setMinimumSize(QSize(300, 28))
         self.label.setMaximumSize(QSize(300, 28))
-        self.label.setFont(font2)
+        self.label.setFont(font3)
 
         self.verticalLayout.addWidget(self.label)
 
@@ -5701,7 +5725,7 @@ class Ui_MainWindow(object):
         self.textbox_year.setObjectName(u"textbox_year")
         self.textbox_year.setMinimumSize(QSize(300, 40))
         self.textbox_year.setMaximumSize(QSize(300, 40))
-        self.textbox_year.setFont(font2)
+        self.textbox_year.setFont(font3)
 
         self.verticalLayout.addWidget(self.textbox_year)
 
@@ -5714,7 +5738,7 @@ class Ui_MainWindow(object):
         self.label_2.setObjectName(u"label_2")
         self.label_2.setMinimumSize(QSize(300, 28))
         self.label_2.setMaximumSize(QSize(300, 28))
-        self.label_2.setFont(font2)
+        self.label_2.setFont(font3)
 
         self.verticalLayout_2.addWidget(self.label_2)
 
@@ -5722,7 +5746,7 @@ class Ui_MainWindow(object):
         self.textbox_number.setObjectName(u"textbox_number")
         self.textbox_number.setMinimumSize(QSize(300, 40))
         self.textbox_number.setMaximumSize(QSize(300, 40))
-        self.textbox_number.setFont(font2)
+        self.textbox_number.setFont(font3)
 
         self.verticalLayout_2.addWidget(self.textbox_number)
 
@@ -5735,7 +5759,7 @@ class Ui_MainWindow(object):
         self.label_3.setObjectName(u"label_3")
         self.label_3.setMinimumSize(QSize(300, 28))
         self.label_3.setMaximumSize(QSize(300, 28))
-        self.label_3.setFont(font2)
+        self.label_3.setFont(font3)
 
         self.verticalLayout_3.addWidget(self.label_3)
 
@@ -5743,7 +5767,7 @@ class Ui_MainWindow(object):
         self.textbox_model.setObjectName(u"textbox_model")
         self.textbox_model.setMinimumSize(QSize(300, 40))
         self.textbox_model.setMaximumSize(QSize(300, 40))
-        self.textbox_model.setFont(font2)
+        self.textbox_model.setFont(font3)
 
         self.verticalLayout_3.addWidget(self.textbox_model)
 
@@ -5756,7 +5780,7 @@ class Ui_MainWindow(object):
         self.label_4.setObjectName(u"label_4")
         self.label_4.setMinimumSize(QSize(300, 28))
         self.label_4.setMaximumSize(QSize(300, 28))
-        self.label_4.setFont(font2)
+        self.label_4.setFont(font3)
 
         self.verticalLayout_4.addWidget(self.label_4)
 
@@ -5764,7 +5788,7 @@ class Ui_MainWindow(object):
         self.textbox_oem.setObjectName(u"textbox_oem")
         self.textbox_oem.setMinimumSize(QSize(300, 40))
         self.textbox_oem.setMaximumSize(QSize(300, 40))
-        self.textbox_oem.setFont(font2)
+        self.textbox_oem.setFont(font3)
 
         self.verticalLayout_4.addWidget(self.textbox_oem)
 
@@ -5782,7 +5806,7 @@ class Ui_MainWindow(object):
         self.groupBox.setObjectName(u"groupBox")
         self.groupBox.setMinimumSize(QSize(300, 250))
         self.groupBox.setMaximumSize(QSize(300, 250))
-        self.groupBox.setFont(font2)
+        self.groupBox.setFont(font3)
         self.horizontalLayout_2 = QHBoxLayout(self.groupBox)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
@@ -5838,15 +5862,6 @@ class Ui_MainWindow(object):
         self.gridLayout.addItem(self.verticalSpacer, 0, 1, 1, 1)
 
         self.tabWidget.addTab(self.tab_spec, "")
-        self.tab = QWidget()
-        self.tab.setObjectName(u"tab")
-        self.select_all_button = QPushButton(self.tab)
-        self.select_all_button.setObjectName(u"select_all_button")
-        self.select_all_button.setGeometry(QRect(290, 270, 391, 161))
-        self.tabWidget.addTab(self.tab, "")
-
-        self.horizontalLayout.addWidget(self.tabWidget)
-
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(MainWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -5855,10 +5870,10 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
 
         self.tabWidget.setCurrentIndex(0)
-        self.tabWidget_2.setCurrentIndex(1)
-        self.tabWidget_3.setCurrentIndex(2)
+        self.tabWidget_2.setCurrentIndex(0)
+        self.tabWidget_3.setCurrentIndex(0)
         self.tabWidget_4.setCurrentIndex(0)
-        self.tabWidget_5.setCurrentIndex(1)
+        self.tabWidget_5.setCurrentIndex(0)
         self.tabWidget_6.setCurrentIndex(0)
 
 
@@ -7194,6 +7209,8 @@ class Ui_MainWindow(object):
         self.checkBox_598.setProperty(u"test_metadata", QCoreApplication.translate("MainWindow", u"00P", None))
         self.tabWidget_6.setTabText(self.tabWidget_6.indexOf(self.widget), QCoreApplication.translate("MainWindow", u"ELK", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_lss), QCoreApplication.translate("MainWindow", u"LSS", None))
+        self.save_spec_button.setText(QCoreApplication.translate("MainWindow", u"Save vehicle_spec.txt", None))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_vehicle_spec), QCoreApplication.translate("MainWindow", u"Vehicle Spec", None))
         self.create_folders_button.setText(QCoreApplication.translate("MainWindow", u"Create Folders", None))
         self.label.setText(QCoreApplication.translate("MainWindow", u"Year", None))
         self.textbox_year.setText("")
@@ -7212,7 +7229,5 @@ class Ui_MainWindow(object):
         self.radio_truck.setText(QCoreApplication.translate("MainWindow", u"Truck", None))
         self.radio_truck.setProperty(u"test_metadata", QCoreApplication.translate("MainWindow", u"H", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_spec), QCoreApplication.translate("MainWindow", u"Specification", None))
-        self.select_all_button.setText(QCoreApplication.translate("MainWindow", u"Select all", None))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), QCoreApplication.translate("MainWindow", u"Page", None))
     # retranslateUi
 
