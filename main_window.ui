@@ -55,14 +55,14 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_2">
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="tab_ped_crossing">
            <attribute name="title">
             <string>Crossing</string>
            </attribute>
            <layout class="QGridLayout" name="gridLayout_8">
-            <item row="0" column="0">
+            <item row="0" column="0" rowspan="2">
              <widget class="QGroupBox" name="groupBox_2">
               <property name="minimumSize">
                <size>
@@ -72,7 +72,7 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>150</width>
+                <width>200</width>
                 <height>16777215</height>
                </size>
               </property>
@@ -388,7 +388,7 @@
               </layout>
              </widget>
             </item>
-            <item row="0" column="1">
+            <item row="0" column="1" rowspan="2">
              <widget class="QGroupBox" name="groupBox_3">
               <property name="minimumSize">
                <size>
@@ -398,7 +398,7 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>150</width>
+                <width>200</width>
                 <height>16777215</height>
                </size>
               </property>
@@ -715,7 +715,7 @@
              </widget>
             </item>
             <item row="0" column="2">
-             <widget class="QGroupBox" name="groupBox_4">
+             <widget class="QGroupBox" name="groupBox_94">
               <property name="minimumSize">
                <size>
                 <width>150</width>
@@ -724,8 +724,8 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>150</width>
-                <height>16777215</height>
+                <width>200</width>
+                <height>250</height>
                </size>
               </property>
               <property name="font">
@@ -734,68 +734,14 @@
                </font>
               </property>
               <property name="title">
-               <string>CPNA-75</string>
+               <string>CPNA-75 [PRE]</string>
               </property>
               <property name="test_metadata" stdset="0">
-               <string>CPNa75</string>
+               <string>CPNa75E</string>
               </property>
-              <layout class="QVBoxLayout" name="verticalLayout_9">
+              <layout class="QVBoxLayout" name="verticalLayout_92">
                <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_23">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>10 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>10</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_24">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>15 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>15</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_25">
+                <widget class="QCheckBox" name="checkBox_503">
                  <property name="minimumSize">
                   <size>
                    <width>70</width>
@@ -821,226 +767,10 @@
                  </property>
                 </widget>
                </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_26">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>25 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>25</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_27">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>30 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>30</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_28">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>35 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>35</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_29">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>40 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>40</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_30">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>45 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>45</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_31">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>50 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>50</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_32">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>55 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>55</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_33">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>60 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>60</string>
-                 </property>
-                </widget>
-               </item>
               </layout>
              </widget>
             </item>
-            <item row="0" column="3">
+            <item row="0" column="3" rowspan="2">
              <widget class="QGroupBox" name="groupBox_5">
               <property name="minimumSize">
                <size>
@@ -1050,7 +780,7 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>150</width>
+                <width>200</width>
                 <height>16777215</height>
                </size>
               </property>
@@ -1366,7 +1096,333 @@
               </layout>
              </widget>
             </item>
-            <item row="1" column="0">
+            <item row="1" column="2">
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>250</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>CPNA-75</string>
+              </property>
+              <property name="test_metadata" stdset="0">
+               <string>CPNa75</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_23">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>10 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>10</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_24">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>15 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>15</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_25">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>20 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>20</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_26">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>25 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>25</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_27">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>30 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>30</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_28">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>35 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>35</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_29">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>40 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>40</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_30">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>45 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>45</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_31">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>50 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>50</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_32">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>55 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>55</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_33">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>60 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>60</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="2" column="0" rowspan="2">
              <widget class="QGroupBox" name="groupBox_6">
               <property name="minimumSize">
                <size>
@@ -1376,7 +1432,7 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>150</width>
+                <width>200</width>
                 <height>16777215</height>
                </size>
               </property>
@@ -1692,7 +1748,7 @@
               </layout>
              </widget>
             </item>
-            <item row="1" column="1">
+            <item row="2" column="1" rowspan="2">
              <widget class="QGroupBox" name="groupBox_9">
               <property name="minimumSize">
                <size>
@@ -1702,7 +1758,7 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>150</width>
+                <width>200</width>
                 <height>16777215</height>
                </size>
               </property>
@@ -2018,8 +2074,8 @@
               </layout>
              </widget>
             </item>
-            <item row="1" column="2">
-             <widget class="QGroupBox" name="groupBox_7">
+            <item row="2" column="2">
+             <widget class="QGroupBox" name="groupBox_95">
               <property name="minimumSize">
                <size>
                 <width>150</width>
@@ -2028,8 +2084,8 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>150</width>
-                <height>16777215</height>
+                <width>200</width>
+                <height>250</height>
                </size>
               </property>
               <property name="font">
@@ -2038,68 +2094,14 @@
                </font>
               </property>
               <property name="title">
-               <string>CPNA-75 Night</string>
+               <string>CPNA-75 Night [PRE]</string>
               </property>
               <property name="test_metadata" stdset="0">
-               <string>CPNa75n</string>
+               <string>CPNa75En</string>
               </property>
-              <layout class="QVBoxLayout" name="verticalLayout_12">
+              <layout class="QVBoxLayout" name="verticalLayout_93">
                <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_56">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>10 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>10</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_57">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>15 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>15</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_58">
+                <widget class="QCheckBox" name="checkBox_504">
                  <property name="minimumSize">
                   <size>
                    <width>70</width>
@@ -2121,230 +2123,14 @@
                   <string>20 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>20</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_59">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>25 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>25</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_60">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>30 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>30</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_61">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>35 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>35</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_62">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>40 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>40</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_63">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>45 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>45</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_64">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>50 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>50</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_65">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>55 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>55</string>
-                 </property>
-                </widget>
-               </item>
-               <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                <widget class="QCheckBox" name="checkBox_66">
-                 <property name="minimumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>70</width>
-                   <height>20</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>11</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>60 kph</string>
-                 </property>
-                 <property name="test_metadata" stdset="0">
-                  <string>60</string>
+                  <string>10</string>
                  </property>
                 </widget>
                </item>
               </layout>
              </widget>
             </item>
-            <item row="1" column="3">
+            <item row="2" column="3" rowspan="2">
              <widget class="QGroupBox" name="groupBox_8">
               <property name="minimumSize">
                <size>
@@ -2354,7 +2140,7 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>150</width>
+                <width>200</width>
                 <height>16777215</height>
                </size>
               </property>
@@ -2642,6 +2428,332 @@
                </item>
                <item alignment="Qt::AlignmentFlag::AlignHCenter">
                 <widget class="QCheckBox" name="checkBox_77">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>60 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>60</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QGroupBox" name="groupBox_7">
+              <property name="minimumSize">
+               <size>
+                <width>150</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>CPNA-75 Night</string>
+              </property>
+              <property name="test_metadata" stdset="0">
+               <string>CPNa75n</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_56">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>10 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>10</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_57">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>15 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>15</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_58">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>20 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>20</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_59">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>25 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>25</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_60">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>30 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>30</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_61">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>35 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>35</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_62">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>40 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>40</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_63">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>45 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>45</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_64">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>50 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>50</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_65">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>55 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>55</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_66">
                  <property name="minimumSize">
                   <size>
                    <width>70</width>
@@ -3956,7 +4068,7 @@
                <string>CPRA-50 Moving</string>
               </property>
               <property name="test_metadata" stdset="0">
-               <string>CPRa25m</string>
+               <string>CPRa50m</string>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_22">
                <item alignment="Qt::AlignmentFlag::AlignHCenter">
@@ -4180,7 +4292,7 @@
                <string>CPRC-50 Moving</string>
               </property>
               <property name="test_metadata" stdset="0">
-               <string>CPRc25m</string>
+               <string>CPRc50m</string>
               </property>
               <layout class="QVBoxLayout" name="verticalLayout_23">
                <item alignment="Qt::AlignmentFlag::AlignHCenter">
@@ -4269,7 +4381,7 @@
                   <string>10 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>50</string>
+                  <string>10</string>
                  </property>
                 </widget>
                </item>
@@ -4296,7 +4408,7 @@
                   <string>15 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>55</string>
+                  <string>15</string>
                  </property>
                 </widget>
                </item>
@@ -4323,7 +4435,7 @@
                   <string>20 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>60</string>
+                  <string>20</string>
                  </property>
                 </widget>
                </item>
@@ -4379,7 +4491,7 @@
                   <string>10 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>50</string>
+                  <string>10</string>
                  </property>
                 </widget>
                </item>
@@ -4406,7 +4518,7 @@
                   <string>15 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>55</string>
+                  <string>15</string>
                  </property>
                 </widget>
                </item>
@@ -4433,7 +4545,7 @@
                   <string>20 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>60</string>
+                  <string>20</string>
                  </property>
                 </widget>
                </item>
@@ -4489,7 +4601,7 @@
                   <string>10 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>50</string>
+                  <string>10</string>
                  </property>
                 </widget>
                </item>
@@ -4545,7 +4657,7 @@
                   <string>10 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>50</string>
+                  <string>10</string>
                  </property>
                 </widget>
                </item>
@@ -4566,7 +4678,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_3">
           <property name="currentIndex">
-           <number>0</number>
+           <number>2</number>
           </property>
           <widget class="QWidget" name="tab_bicy_crossing">
            <attribute name="title">
@@ -6174,7 +6286,7 @@
                   <string>10 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>50</string>
+                  <string>10</string>
                  </property>
                 </widget>
                </item>
@@ -6201,7 +6313,7 @@
                   <string>15 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>55</string>
+                  <string>15</string>
                  </property>
                 </widget>
                </item>
@@ -6228,7 +6340,7 @@
                   <string>20 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>60</string>
+                  <string>20</string>
                  </property>
                 </widget>
                </item>
@@ -6284,7 +6396,7 @@
                   <string>10 kph</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>50</string>
+                  <string>10</string>
                  </property>
                 </widget>
                </item>
@@ -6321,7 +6433,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_4">
           <property name="currentIndex">
-           <number>2</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_moto_long">
            <attribute name="title">
@@ -7659,7 +7771,7 @@
                   <string>0.2 Left</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>02D</string>
+                  <string>02D_72EMT</string>
                  </property>
                 </widget>
                </item>
@@ -7686,7 +7798,7 @@
                   <string>0.3 Left</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>03D</string>
+                  <string>03D_72EMT</string>
                  </property>
                 </widget>
                </item>
@@ -7713,7 +7825,7 @@
                   <string>0.4 Left</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>04D</string>
+                  <string>04D_72EMT</string>
                  </property>
                 </widget>
                </item>
@@ -7740,7 +7852,7 @@
                   <string>0.5 Left</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>05D</string>
+                  <string>05D_72EMT</string>
                  </property>
                 </widget>
                </item>
@@ -7767,7 +7879,7 @@
                   <string>0.6 Left</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>06D</string>
+                  <string>06D_72EMT</string>
                  </property>
                 </widget>
                </item>
@@ -8394,7 +8506,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_5">
           <property name="currentIndex">
-           <number>0</number>
+           <number>1</number>
           </property>
           <widget class="QWidget" name="tab_c2c_crossing">
            <attribute name="title">
@@ -9971,6 +10083,143 @@
             <string>Longitudinal</string>
            </attribute>
            <layout class="QGridLayout" name="gridLayout_10">
+            <item row="2" column="1" alignment="Qt::AlignmentFlag::AlignHCenter">
+             <widget class="QGroupBox" name="groupBox_92">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>CCRb</string>
+              </property>
+              <property name="test_metadata" stdset="0">
+               <string>CCRb-50_AEB</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_86">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_471">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>119</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>40m -6m/s²</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>40_6</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_475">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>119</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>12m -6m/s²</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>12_6</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_491">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>119</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>40m -2m/s²</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>40_2</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_472">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>119</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>12m -2m/s²</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>12_2</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
             <item row="0" column="0">
              <widget class="QGroupBox" name="groupBox_64">
               <property name="minimumSize">
@@ -9981,7 +10230,7 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>10000</width>
+                <width>469</width>
                 <height>1000</height>
                </size>
               </property>
@@ -11630,11 +11879,94 @@
               </layout>
              </widget>
             </item>
-            <item row="0" column="1">
-             <widget class="QGroupBox" name="groupBox_76">
+            <item row="1" column="2" alignment="Qt::AlignmentFlag::AlignHCenter">
+             <widget class="QGroupBox" name="groupBox_88">
               <property name="minimumSize">
                <size>
                 <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>CCFhol</string>
+              </property>
+              <property name="test_metadata" stdset="0">
+               <string>CCFhol</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_81">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_449">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>50 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>50</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_450">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>70 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>70</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1" colspan="2">
+             <widget class="QGroupBox" name="groupBox_76">
+              <property name="minimumSize">
+               <size>
+                <width>469</width>
                 <height>300</height>
                </size>
               </property>
@@ -13289,7 +13621,144 @@
               </layout>
              </widget>
             </item>
-            <item row="1" column="0">
+            <item row="2" column="2" alignment="Qt::AlignmentFlag::AlignHCenter">
+             <widget class="QGroupBox" name="groupBox_93">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>150</width>
+                <height>150</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>CCRb [FCW]</string>
+              </property>
+              <property name="test_metadata" stdset="0">
+               <string>CCRb-50_FCW</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_90">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_473">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>119</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>40m -6m/s²</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>40_6</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_474">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>119</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>12m -6m/s²</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>12_6</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_492">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>119</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>40m -2m/s²</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>40_2</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_493">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>119</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>12m -2m/s²</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>12_2</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0" rowspan="2">
              <widget class="QGroupBox" name="groupBox_70">
               <property name="minimumSize">
                <size>
@@ -13299,7 +13768,7 @@
               </property>
               <property name="maximumSize">
                <size>
-                <width>10000</width>
+                <width>469</width>
                 <height>1000</height>
                </size>
               </property>
@@ -13338,7 +13807,7 @@
                   <string>-50%</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>-50%</string>
+                  <string>150</string>
                  </property>
                  <layout class="QVBoxLayout" name="verticalLayout_70">
                   <item>
@@ -14273,175 +14742,88 @@
               </layout>
              </widget>
             </item>
-            <item row="1" column="1">
-             <layout class="QHBoxLayout" name="horizontalLayout_24">
-              <item>
-               <widget class="QGroupBox" name="groupBox_82">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>100</width>
-                  <height>100</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>13</pointsize>
-                 </font>
-                </property>
-                <property name="title">
-                 <string>CCFhos</string>
-                </property>
-                <property name="test_metadata" stdset="0">
-                 <string>CCFhos</string>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_80">
-                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                  <widget class="QCheckBox" name="checkBox_447">
-                   <property name="minimumSize">
-                    <size>
-                     <width>70</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>11</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>50 kph</string>
-                   </property>
-                   <property name="test_metadata" stdset="0">
-                    <string>50</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                  <widget class="QCheckBox" name="checkBox_448">
-                   <property name="minimumSize">
-                    <size>
-                     <width>70</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>11</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>70 kph</string>
-                   </property>
-                   <property name="test_metadata" stdset="0">
-                    <string>70</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QGroupBox" name="groupBox_88">
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>100</width>
-                  <height>100</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>13</pointsize>
-                 </font>
-                </property>
-                <property name="title">
-                 <string>CCFhol</string>
-                </property>
-                <property name="test_metadata" stdset="0">
-                 <string>CCFhol</string>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_81">
-                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                  <widget class="QCheckBox" name="checkBox_449">
-                   <property name="minimumSize">
-                    <size>
-                     <width>70</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>11</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>50 kph</string>
-                   </property>
-                   <property name="test_metadata" stdset="0">
-                    <string>50</string>
-                   </property>
-                  </widget>
-                 </item>
-                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                  <widget class="QCheckBox" name="checkBox_450">
-                   <property name="minimumSize">
-                    <size>
-                     <width>70</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="maximumSize">
-                    <size>
-                     <width>70</width>
-                     <height>20</height>
-                    </size>
-                   </property>
-                   <property name="font">
-                    <font>
-                     <pointsize>11</pointsize>
-                    </font>
-                   </property>
-                   <property name="text">
-                    <string>70 kph</string>
-                   </property>
-                   <property name="test_metadata" stdset="0">
-                    <string>70</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-             </layout>
+            <item row="1" column="1" alignment="Qt::AlignmentFlag::AlignHCenter">
+             <widget class="QGroupBox" name="groupBox_82">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>13</pointsize>
+               </font>
+              </property>
+              <property name="title">
+               <string>CCFhos</string>
+              </property>
+              <property name="test_metadata" stdset="0">
+               <string>CCFhos</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_80">
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_447">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>50 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>50</string>
+                 </property>
+                </widget>
+               </item>
+               <item alignment="Qt::AlignmentFlag::AlignHCenter">
+                <widget class="QCheckBox" name="checkBox_448">
+                 <property name="minimumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>70</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>11</pointsize>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>70 kph</string>
+                 </property>
+                 <property name="test_metadata" stdset="0">
+                  <string>70</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
             </item>
            </layout>
           </widget>
@@ -14823,7 +15205,7 @@
         <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget_6">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_lss_lka">
            <attribute name="title">
@@ -16993,7 +17375,7 @@
                   <string>0.2 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>02P</string>
+                  <string>02P_NVT</string>
                  </property>
                 </widget>
                </item>
@@ -17020,7 +17402,7 @@
                   <string>0.3 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>03P</string>
+                  <string>03P_NVT</string>
                  </property>
                 </widget>
                </item>
@@ -17047,7 +17429,7 @@
                   <string>0.4 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>04P</string>
+                  <string>04P_NVT</string>
                  </property>
                 </widget>
                </item>
@@ -17074,7 +17456,7 @@
                   <string>0.5 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>05P</string>
+                  <string>05P_NVT</string>
                  </property>
                 </widget>
                </item>
@@ -17101,7 +17483,7 @@
                   <string>0.6 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>06P</string>
+                  <string>06P_NVT</string>
                  </property>
                 </widget>
                </item>
@@ -17460,7 +17842,7 @@
                   <string>0.2 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>02P</string>
+                  <string>02P_72GVT</string>
                  </property>
                 </widget>
                </item>
@@ -17487,7 +17869,7 @@
                   <string>0.3 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>03P</string>
+                  <string>03P_72GVT</string>
                  </property>
                 </widget>
                </item>
@@ -17514,7 +17896,7 @@
                   <string>0.4 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>04P</string>
+                  <string>04P_72GVT</string>
                  </property>
                 </widget>
                </item>
@@ -17541,7 +17923,7 @@
                   <string>0.5 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>05P</string>
+                  <string>05P_72GVT</string>
                  </property>
                 </widget>
                </item>
@@ -17568,7 +17950,7 @@
                   <string>0.6 mps</string>
                  </property>
                  <property name="test_metadata" stdset="0">
-                  <string>06P</string>
+                  <string>06P_72GVT</string>
                  </property>
                 </widget>
                </item>
@@ -18204,6 +18586,9 @@
                    <property name="checked">
                     <bool>true</bool>
                    </property>
+                   <property name="test_metadata" stdset="0">
+                    <string>C</string>
+                   </property>
                   </widget>
                  </item>
                  <item>
@@ -18223,6 +18608,9 @@
                    <property name="text">
                     <string>Van</string>
                    </property>
+                   <property name="test_metadata" stdset="0">
+                    <string>V</string>
+                   </property>
                   </widget>
                  </item>
                  <item>
@@ -18241,6 +18629,9 @@
                    </property>
                    <property name="text">
                     <string>Truck</string>
+                   </property>
+                   <property name="test_metadata" stdset="0">
+                    <string>H</string>
                    </property>
                   </widget>
                  </item>
@@ -18299,6 +18690,24 @@
          </spacer>
         </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Page</string>
+       </attribute>
+       <widget class="QPushButton" name="select_all_button">
+        <property name="geometry">
+         <rect>
+          <x>290</x>
+          <y>270</y>
+          <width>391</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Select all</string>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>

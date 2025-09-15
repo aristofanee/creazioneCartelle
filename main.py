@@ -1,14 +1,26 @@
 import sys
 from pathlib import Path
-from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox, QFileDialog, QCheckBox
+from PySide6.QtWidgets import QApplication, QMainWindow, QMessageBox, QFileDialog, QCheckBox, QButtonGroup
 from main_window import Ui_MainWindow  # this class is defined in the generated file
+import json
+import mme_processor
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+
+        with open("vru.json", "r", encoding="utf-8") as f:
+            self.vru_table = json.load(f)
+
+        self.ui.button_group = QButtonGroup()
+        self.ui.button_group.addButton(self.ui.radio_car)
+        self.ui.button_group.addButton(self.ui.radio_van)
+        self.ui.button_group.addButton(self.ui.radio_truck)
+
         self.ui.create_folders_button.clicked.connect(self.button_pressed)
+        self.ui.select_all_button.clicked.connect(self.select_all)
 
     def get_tab_name(self,checkbox):
         tab_widget = self.ui.tabWidget
@@ -21,6 +33,12 @@ class MainWindow(QMainWindow):
             parent = parent.parent()
 
         return(tab_name)
+    
+    def select_all(self):
+        checkboxes = self.findChildren(QCheckBox)
+
+        for checkbox in checkboxes:
+            checkbox.setChecked(True)
 
 
 
@@ -32,7 +50,7 @@ class MainWindow(QMainWindow):
              QMessageBox.warning(self, "Warning", "Some of the specifications are missing")
              return
 
-        vehicle_spec_file = Path("veihcle_spec.txt")
+        vehicle_spec_file = Path("vehicle_spec.txt")
 
         #remove the spec check
         if vehicle_spec_file.is_file():
@@ -82,6 +100,7 @@ class MainWindow(QMainWindow):
                 continue
 
             tab_name = self.get_tab_name(checkbox).strip()
+            test_identifier = tab_name.split("_")[1]
 
             match tab_name:
                 case "tab_ped":
@@ -97,7 +116,7 @@ class MainWindow(QMainWindow):
                 case _:
                     print("no tab was found.")
 
-            folder_name = year
+            folder_name = "" 
 
             metadata = [checkbox.property("test_metadata")]
             parent = checkbox.parent()
@@ -114,40 +133,134 @@ class MainWindow(QMainWindow):
 
             print(test_name)
 
+            vut_speed = None
+            target_speed = None
+            lateral_speed = None
+            target_type = None
+
+
             if len(metadata) == 3:
                 if tab_name == "tab_lss":
-                    folder_name = encap_number + "-" + metadata[1] + "-" + metadata[2] + "-" + metadata[0] + "GVT"
-                elif test_name.startswith("CCC") or test_name.startswith("CMFt"):
-                    folder_name = encap_number + "-" + metadata[0] + "-" + metadata[2] + "VUT-" + metadata[1] + "GVT"
-                elif test_name.startswith("CCR"):
-                    folder_name = encap_number + "-" + metadata[0] + "-" + metadata[2] + "VUT-" + metadata[1]
+                    folder_name = metadata[1] + "_" + metadata[2] + "_" + metadata[0] + "GVT"
+                    vut_speed = 72
+                    lateral_speed = metadata[2]
+                    target_speed = metadata[0]
+                    target_type = "GVT"
+
+                elif test_name.startswith("CCC") or test_name.startswith("CCFt"):
+                    folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1] + "GVT"
+                    vut_speed = metadata[2] 
+                    target_speed = metadata[1]
+                    target_type = "GVT"
+                     
+                elif test_name.startswith("CMFt"): 
+                    folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1] + "GVT"
+                    vut_speed = metadata[2] 
+                    target_speed = metadata[1]
+                    target_type = "EMT"
+                     
+                elif test_name.startswith("CCRs"):
+                    folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1]
+                    vut_speed = metadata[2]
+                    target_speed = 0
+                    target_type = "GVT"
+                     
+                elif test_name.startswith("CCRm"):
+                    folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1]
+                    vut_speed = metadata[2]
+                    target_speed = 20 
+                    target_type = "GVT"
+
                 elif test_name.startswith("ELK") and active_folder == aebm_folder:
-                    folder_name = encap_number + "-" + metadata[1] + "-" + metadata[2] + "VUT-" + metadata[0] + "EMT"
+                    folder_name = metadata[1] + "_" + metadata[2] + "_" + metadata[0] + "EMT"
+                    target_speed = int(metadata[0])
+                    if target_speed == 60:
+                        vut_speed = 50
+                    elif target_speed == 80:
+                        vut_speed = 72
+                    
+                    lateral_speed = metadata[2]
+
+                    target_type = "EMT"
+
+                else:
+                    #TODO errore
+                    print("ERRORE")
+                    
 
             elif len(metadata) == 2:
-                for element in metadata:
-                    folder_name = folder_name + "-" + element
+                folder_name = metadata[0] + "_" + metadata[1]
+                
+                if test_name.startswith("CCRb"):
+                    vut_speed = 50
+                    target_speed = 50 
+                    target_type = "GVT"
 
-                if not (active_folder == lss_folder) and not (test_name == "ELK_ONC"):
-                    folder_name = folder_name + "VUT"
+                elif test_name.startswith("CCFhol") or test_name.startswith("CCFhos") :
+                    vut_speed = int(metadata[1])
+                    target_speed = int(metadata[1]) 
+                    target_type = "GVT"
+                     
+                elif test_name.startswith("CMRb"):
+                    vut_speed = 50
+                    target_speed = 50 
+                    target_type = "EMT"
+
+                elif test_name.startswith("CMRs"):
+                    vut_speed = int(metadata[1])
+                    target_speed = 0 
+                    target_type = "EMT"
+                
+                elif active_folder == aebm_folder and test_name.startswith("ELK_ONC"):
+                    vut_speed = 72 
+                    target_speed = 72 
+                    target_type = "EMT"
+                    lateral_speed = metadata[1]
+                
+                elif active_folder == lss_folder and not "GVT" in metadata[1]:
+                    vut_speed = 72 
+                    target_type = "NVT"
+                    lateral_speed = metadata[1].split("_")[0]
+
+                elif active_folder == lss_folder and "GVT" in metadata[1]:
+                    vut_speed = 72 
+                    target_type = "GVT"
+                    lateral_speed = metadata[1].split("_")[0]
+                else:
+                    vut_speed = int(metadata[1])
+                    target_speed = self.vru_table[test_name]["target_speed"]
+                    target_type = self.vru_table[test_name]["target_type"]
+
+
+
+            #veihcle_type_checkbox = self.ui.button_group.checkedButton()
+            #folder_name = veihcle_type_checkbox.property("test_metadata") + folder_name[2:]
+
+ 
+            folder_name = encap_number + "_" + folder_name
 
             folder_name = folder_name + "-01"
-
 
             test_path = active_folder / folder_name
             test_path.mkdir(parents=True, exist_ok=True)
 
             channel_path = test_path / "Channel"
-            print(channel_path)
             channel_path.mkdir(parents=True, exist_ok=True)
 
             movie_path = test_path / "Movie"
             movie_path.mkdir(parents=True, exist_ok=True)
 
+            mme_file_lines = mme_processor.mmefile_creator(vehicle_spec_file, 
+                                              model, folder_name, test_name,test_identifier,
+                                              vut_speed, lateral_speed, target_speed, target_type)
+
+            with open(test_path / folder_name + ".mme", "w", encoding="utf-8") as file:
+                file.writelines(mme_file_lines)
+
             print(folder_name)
 
 
-
+#TODO understand how the dooring works
 
 
 if __name__ == "__main__":

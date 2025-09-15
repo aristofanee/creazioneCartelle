@@ -1,0 +1,19 @@
+VIN:	WBA31GP0909019793			
+Mass VUT:	2148 Kg		
+Lenght VUT:	4.75 m
+Width VUT:	1.88 m
+Profile-X:	0.175, 0.035, 0.01, 0, 0.01, 0.035, 0.175
+Profile-Y:	-0.89, -0.593, -0.297, 0, 0.297, 0.593, 0.89
+
+Regulation C2C:	1.25
+Regulation VRU:	1.26
+Regulation LSS:	2.25
+Regulation SAS:	2.5
+Regulation OSM:	1.2
+
+Date of the test C2C:	16/06/2025
+Date of the test VRU P:	16/06/2025
+Date of the test LSS:	16/06/2025
+Date of the test VRU B:	16/06/2025
+Date of the test VRU M:	16/06/2025
+Date of the test SAS:	16/06/2025
