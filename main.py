@@ -212,6 +212,7 @@ class MainWindow(QMainWindow):
                     vut_speed = int(metadata[1])
                     target_speed = int(metadata[1])
                     target_type = "GVT"
+                    folder_name = folder_name + "VUT"
 
                 elif test_name.startswith("CMRb"):
                     vut_speed = 50
@@ -222,6 +223,7 @@ class MainWindow(QMainWindow):
                     vut_speed = int(metadata[1])
                     target_speed = 0
                     target_type = "EMT"
+                    folder_name = folder_name + "VUT"
 
                 elif active_folder == aebm_folder and test_name.startswith("ELK_ONC"):
                     vut_speed = 72
@@ -242,6 +244,7 @@ class MainWindow(QMainWindow):
                     vut_speed = int(metadata[1])
                     target_speed = self.vru_table[test_name]["target_speed"]
                     target_type = self.vru_table[test_name]["target_type"]
+                    folder_name = folder_name + "VUT"
 
 
 
