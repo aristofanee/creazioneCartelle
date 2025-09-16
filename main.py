@@ -166,7 +166,7 @@ class MainWindow(QMainWindow):
                     target_type = "GVT"
 
                 elif test_name.startswith("CMFt"):
-                    folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1] + "GVT"
+                    folder_name = metadata[0] + "_" + metadata[2] + "VUT_" + metadata[1] + "EMT"
                     vut_speed = metadata[2]
                     target_speed = metadata[1]
                     target_type = "EMT"
