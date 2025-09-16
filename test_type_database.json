@@ -1,0 +1,422 @@
+{
+  "CPFa50": {
+    "target_speed": 8,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPFa50n": {
+    "target_speed": 8,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPNa25": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPNa25n": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPNa75E": {
+    "target_speed": 3,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPNa75En": {
+    "target_speed": 3,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPNa75": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPNa75n": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPNc50": {
+    "target_speed": 5,
+    "target_type": "PEDc",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPNc50n": {
+    "target_speed": 5,
+    "target_type": "PEDc",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPLa50": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPLa50n": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPLa25": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "FCW",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPLa25n": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "FCW",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPRa25s": {
+    "target_speed": 0,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPRa50s": {
+    "target_speed": 0,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPRa75s": {
+    "target_speed": 0,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPRa50m": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPRc25s": {
+    "target_speed": 0,
+    "target_type": "PEDc",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPRc50s": {
+    "target_speed": 0,
+    "target_type": "PEDc",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPRc75s": {
+    "target_speed": 0,
+    "target_type": "PEDc",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPRc50m": {
+    "target_speed": 5,
+    "target_type": "PEDc",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPTa50Fv": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPTa50Fe": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPTa50Nv": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CPTa50Ne": {
+    "target_speed": 5,
+    "target_type": "PEDa",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CBFa50": {
+    "target_speed": 20,
+    "target_type": "EBT",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CBNa50": {
+    "target_speed": 15,
+    "target_type": "EBT",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CBNaO50": {
+    "target_speed": 10,
+    "target_type": "EBT",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CBLa50": {
+    "target_speed": 15,
+    "target_type": "EBT",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CBLa25": {
+    "target_speed": 20,
+    "target_type": "EBT",
+    "test_type": "FCW",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CBTa50Fv": {
+    "target_speed": 15,
+    "target_type": "EBT",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CBTa50Nv": {
+    "target_speed": 15,
+    "target_type": "EBT",
+    "test_type": "AEB",
+    "vut_speed": "user_defined",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  }
+  ,
+  "CMRs-50_AEB": {
+    "vut_speed": "user_defined",
+    "target_speed": 0,
+    "target_type": "EMT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  }
+   ,
+  "CMRs-50_FCW": {
+    "vut_speed": "user_defined",
+    "target_speed": 0,
+    "target_type": "EMT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  }
+   ,
+  "CMRb-25_AEB": {
+    "vut_speed": 50,
+    "target_speed": 50,
+    "distance_deceleration":"user_defined",
+    "target_type": "EMT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{distance_deceleration}"
+  }
+   ,
+  "CMRb-25_FCW": {
+    "vut_speed": 50,
+    "target_speed": 50,
+    "distance_deceleration":"user_defined",
+    "target_type": "EMT",
+    "test_type": "FCW",
+    "naming_convention": "{test_name}_{distance_deceleration}"
+  },
+  "CMFt": {
+    "vut_speed": "user_defined",
+    "target_speed": "user_defined",
+    "target_type": "EMT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT_{target_speed}EMT"
+  },
+  "ELK_ONC": {
+    "vut_speed": 72,
+    "lateral_speed":"user_defined",
+    "target_speed": "user_defined",
+    "target_type": "user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}_{target_speed}{target_type}"
+  },
+   "ELK_OVU": {
+    "vut_speed": "user_defined",
+    "lateral_speed":"user_defined",
+    "target_speed": "user_defined",
+    "target_type": "user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}_{target_speed}{target_type}"
+  },
+   "ELK_OVI": {
+    "vut_speed": "user_defined",
+    "lateral_speed":"user_defined",
+    "target_speed": "user_defined",
+    "target_type": "user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}_{target_speed}{target_type}"
+  },
+   "CCC_AEB": {
+    "vut_speed": "user_defined",
+    "target_speed": "user_defined",
+    "target_type": "GVT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT_{target_speed}GVT"
+  },
+   "CCC_FCW": {
+    "vut_speed": "user_defined",
+    "target_speed": "user_defined",
+    "target_type": "GVT",
+    "test_type": "FCW",
+    "naming_convention": "{test_name}_{vut_speed}VUT_{target_speed}GVT"
+  },
+   "CCRs_AEB": {
+    "vut_speed": "user_defined",
+    "target_speed": 0,
+    "target_type": "GVT",
+    "overlap":"user_defined",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT_{overlap}"
+  },
+   "CCRs_FCW": {
+    "vut_speed": "user_defined",
+    "target_speed": 0,
+    "target_type": "GVT",
+    "overlap":"user_defined",
+    "test_type": "FCW",
+    "naming_convention": "{test_name}_{vut_speed}VUT_{overlap}"
+  },
+   "CCRm_AEB": {
+    "vut_speed": "user_defined",
+    "target_speed": 20,
+    "target_type": "GVT",
+    "overlap":"user_defined",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT_{overlap}"
+  },
+   "CCFhos": {
+    "vut_speed": "user_defined",
+    "target_speed": "user_defined",
+    "target_type": "GVT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+   "CCFhol": {
+    "vut_speed": "user_defined",
+    "target_speed": "user_defined",
+    "target_type": "GVT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT"
+  },
+  "CCRb-50_AEB": {
+    "vut_speed": 50,
+    "target_speed": 50,
+    "distance_deceleration":"user_defined",
+    "target_type": "GVT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{distance_deceleration}"
+  },
+  "CCRb-50_FCW": {
+    "vut_speed": 50,
+    "target_speed": 50,
+    "distance_deceleration":"user_defined",
+    "target_type": "GVT",
+    "test_type": "FCW",
+    "naming_convention": "{test_name}_{distance_deceleration}"
+  },
+  "CCFt": {
+    "vut_speed": "user_defined",
+    "target_speed": "user_defined",
+    "target_type": "GVT",
+    "test_type": "AEB",
+    "naming_convention": "{test_name}_{vut_speed}VUT_{target_speed}GVT"
+  },
+  "LKA_SSL": {
+    "vut_speed": 72,
+    "target_type": "NVT",
+    "lateral_speed":"user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}"
+  },
+  "LKA_SDL": {
+    "vut_speed": 72,
+    "target_type": "NVT",
+    "lateral_speed":"user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}"
+  },
+  "LDW_SSL": {
+    "vut_speed": 72,
+    "target_type": "NVT",
+    "lateral_speed":"user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}"
+  },
+  "LDW_SDL": {
+    "vut_speed": 72,
+    "target_type": "NVT",
+    "lateral_speed":"user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}"
+  },
+  "ELK_SSL": {
+    "vut_speed": 72,
+    "target_type": "NVT",
+    "lateral_speed":"user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}"
+  },
+  "ELK_REN": {
+    "vut_speed": 72,
+    "target_type": "NVT",
+    "lateral_speed":"user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}"
+  },
+  "ELK_REC": {
+    "vut_speed": 72,
+    "target_type": "NVT",
+    "lateral_speed":"user_defined",
+    "test_type": "LSS",
+    "naming_convention": "{test_name}_{lateral_speed}"
+  }
+}
