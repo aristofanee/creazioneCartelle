@@ -70,7 +70,7 @@ def mmefile_creator(specfile, model,folder_name,test_name, test_identifier, vut_
     if lateral_speed == None:
         lat_speed = "0 km/h"
     else:
-        lat_speed = lateral_speed + " m/s"
+        lat_speed = str(lateral_speed) + " m/s"
 
     mme_lines.append("Velocity test object 1 lat.:\t\t" + lat_speed)
     mme_lines.append("Mass test object 1:\t\t" + specfile_data["Mass VUT"] + " Kg")

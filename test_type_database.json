@@ -153,28 +153,28 @@
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CPTa50Fv": {
+  "CPTa50_Fv": {
     "target_speed": 5,
     "target_type": "PEDa",
     "test_type": "AEB",
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CPTa50Fe": {
+  "CPTa50_Fe": {
     "target_speed": 5,
     "target_type": "PEDa",
     "test_type": "AEB",
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CPTa50Nv": {
+  "CPTa50_Nv": {
     "target_speed": 5,
     "target_type": "PEDa",
     "test_type": "AEB",
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CPTa50Ne": {
+  "CPTa50_Ne": {
     "target_speed": 5,
     "target_type": "PEDa",
     "test_type": "AEB",
@@ -216,14 +216,14 @@
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CBTa50Fv": {
+  "CBTa50_Fv": {
     "target_speed": 15,
     "target_type": "EBT",
     "test_type": "AEB",
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CBTa50Nv": {
+  "CBTa50_Nv": {
     "target_speed": 15,
     "target_type": "EBT",
     "test_type": "AEB",
@@ -231,7 +231,7 @@
     "naming_convention": "{test_name}_{vut_speed}VUT"
   }
   ,
-  "CMRs-50_AEB": {
+  "CMRs50_AEB": {
     "vut_speed": "user_defined",
     "target_speed": 0,
     "target_type": "EMT",
@@ -239,7 +239,7 @@
     "naming_convention": "{test_name}_{vut_speed}VUT"
   }
    ,
-  "CMRs-50_FCW": {
+  "CMRs50_FCW": {
     "vut_speed": "user_defined",
     "target_speed": 0,
     "target_type": "EMT",
@@ -247,7 +247,7 @@
     "naming_convention": "{test_name}_{vut_speed}VUT"
   }
    ,
-  "CMRb-25_AEB": {
+  "CMRb25_AEB": {
     "vut_speed": 50,
     "target_speed": 50,
     "distance_deceleration":"user_defined",
@@ -256,7 +256,7 @@
     "naming_convention": "{test_name}_{distance_deceleration}"
   }
    ,
-  "CMRb-25_FCW": {
+  "CMRb25_FCW": {
     "vut_speed": 50,
     "target_speed": 50,
     "distance_deceleration":"user_defined",
@@ -347,7 +347,7 @@
     "test_type": "AEB",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CCRb-50_AEB": {
+  "CCRb50_AEB": {
     "vut_speed": 50,
     "target_speed": 50,
     "distance_deceleration":"user_defined",
@@ -355,7 +355,7 @@
     "test_type": "AEB",
     "naming_convention": "{test_name}_{distance_deceleration}"
   },
-  "CCRb-50_FCW": {
+  "CCRb50_FCW": {
     "vut_speed": 50,
     "target_speed": 50,
     "distance_deceleration":"user_defined",

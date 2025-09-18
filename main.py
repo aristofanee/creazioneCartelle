@@ -61,7 +61,7 @@ class MainWindow(QMainWindow):
             file.write(textbox_content)
         QMessageBox.information(self, "vehicle_spec.txt", "The file was correctly saved.")
 
-    def button_pressed_refactored(self):
+    def button_pressed(self):
         # Check if the textboxes are full and saves the data in them
         if self.ui.textbox_model.text().strip() == "" or \
         self.ui.textbox_year.text().strip() == "" or\
@@ -75,8 +75,15 @@ class MainWindow(QMainWindow):
         oem = self.ui.textbox_oem.text().strip()
         encap_number = self.ui.textbox_number.text().strip()
 
-        main_folder = Path(QFileDialog.getExistingDirectory(None, "Select where you want the folder to be created: "))
+        main_folder_string = QFileDialog.getExistingDirectory(None, "Select where you want the folder to be created: ") 
+        if not main_folder_string:
+            QMessageBox.warning(self, "Warning", "No folder was selected.")
+            return
+        else:
+            main_folder = Path(main_folder_string)
 
+        #print(main_folder)
+             
         folders_name_root =  year + "-" + oem + "-" + encap_number
 
         parent_folder_name = folders_name_root + "-" + model
@@ -129,6 +136,10 @@ class MainWindow(QMainWindow):
                     print("no tab was found.")
 
             test_name = checkbox.property("test_name")
+
+            #print(checkbox.objectName())
+            print(test_name)
+
             test_template = self.database[test_name]
             test_data = {"test_name":test_name}
 
@@ -141,7 +152,7 @@ class MainWindow(QMainWindow):
                     test_data[key] = value
 
             if "lateral_speed" not in test_data:
-                test_data["lateral_speed"] = 0 
+                test_data["lateral_speed"] = None 
 
             if "target_speed" not in test_data:
                 test_data["target_speed"] = "" 
@@ -154,9 +165,8 @@ class MainWindow(QMainWindow):
             lateral_speed = test_data["lateral_speed"]
             target_type = test_data["target_type"]
 
-            print(test_name)
 
-            folder_name = encap_number + "_" + run_name + "_" + "-01"
+            folder_name = encap_number + "_" + run_name + "-01"
 
             test_path = active_folder / folder_name
             test_path.mkdir(parents=True, exist_ok=True)
