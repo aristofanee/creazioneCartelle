@@ -4546,13 +4546,13 @@
                 </font>
                </property>
                <property name="text">
-                <string>8 kph</string>
+                <string>4 kph</string>
                </property>
                <property name="test_name" stdset="0">
                 <string>CPRc25s</string>
                </property>
                <property name="vut_speed" stdset="0">
-                <string>8</string>
+                <string>4</string>
                </property>
               </widget>
              </item>
@@ -4605,13 +4605,13 @@
                 </font>
                </property>
                <property name="text">
-                <string>4 kph</string>
+                <string>8 kph</string>
                </property>
                <property name="test_name" stdset="0">
                 <string>CPRc50s</string>
                </property>
                <property name="vut_speed" stdset="0">
-                <string>4</string>
+                <string>8</string>
                </property>
               </widget>
              </item>
@@ -4664,13 +4664,13 @@
                 </font>
                </property>
                <property name="text">
-                <string>8 kph</string>
+                <string>4 kph</string>
                </property>
                <property name="test_name" stdset="0">
                 <string>CPRc75s</string>
                </property>
                <property name="vut_speed" stdset="0">
-                <string>8</string>
+                <string>4</string>
                </property>
               </widget>
              </item>
@@ -4723,13 +4723,13 @@
                 </font>
                </property>
                <property name="text">
-                <string>4 kph</string>
+                <string>8 kph</string>
                </property>
                <property name="test_name" stdset="0">
                 <string>CPRc50m</string>
                </property>
                <property name="vut_speed" stdset="0">
-                <string>4</string>
+                <string>8</string>
                </property>
               </widget>
              </item>
