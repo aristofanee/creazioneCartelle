@@ -19,7 +19,7 @@ def mmefile_creator(specfile, model,folder_name,test_name, test_identifier, vut_
     mme_lines.append("Laboratory name:\t\tCSI")
     mme_lines.append("Customer name:\t\tEuro NCAP")
     mme_lines.append("Customer test ref. number:\t\t"+folder_name)
-    mme_lines.append("Customer project ref. number:\t\t"+folder_name.split("_")[0])
+    mme_lines.append("Customer project ref. number:\t\t"+folder_name.split("-")[0])
     mme_lines.append("Title:\t\tEuro NCAP " + datetime.now().strftime("%A"))
     mme_lines.append("Timestamp:\t\t"+ datetime.now().strftime("%d-%b-%Y %H:%M:%S"))
 
