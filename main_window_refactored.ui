@@ -51,7 +51,7 @@
      </sizepolicy>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_ped">
      <attribute name="title">
@@ -61,7 +61,7 @@
       <item row="0" column="0">
        <widget class="QTabWidget" name="tabWidget_2">
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <property name="vut_speed" stdset="0">
          <string>10</string>
@@ -9475,7 +9475,7 @@
       <item row="0" column="0">
        <widget class="QTabWidget" name="tabWidget_5">
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="tab_c2c_crossing">
          <attribute name="title">
@@ -13691,138 +13691,6 @@
                 <string>150</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_76">
-                <item>
-                 <widget class="QCheckBox" name="checkBox_218">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>10 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>150</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>10</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_392">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>15 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>150</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>15</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_393">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>20 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>150</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>20</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_395">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>25 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>150</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>25</string>
-                  </property>
-                 </widget>
-                </item>
                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
                  <widget class="QCheckBox" name="checkBox_219">
                   <property name="minimumSize">
@@ -14054,6 +13922,138 @@
                   </property>
                  </widget>
                 </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_395">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>65 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>150</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>65</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_218">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>70 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>150</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>70</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_392">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>75 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>150</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>75</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_393">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>80 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>150</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>80</string>
+                  </property>
+                 </widget>
+                </item>
                </layout>
               </widget>
              </item>
@@ -14083,138 +14083,6 @@
                 <string>175</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_79">
-                <item>
-                 <widget class="QCheckBox" name="checkBox_232">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>10 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>175</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>10</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_422">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>15 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>175</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>15</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_423">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>20 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>175</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>20</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_424">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>25 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>175</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>25</string>
-                  </property>
-                 </widget>
-                </item>
                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
                  <widget class="QCheckBox" name="checkBox_233">
                   <property name="minimumSize">
@@ -14446,6 +14314,138 @@
                   </property>
                  </widget>
                 </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_232">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>65 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>175</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>65</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_424">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>70 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>175</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>70</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_423">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>75 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>175</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>75</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_422">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>80 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>175</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>80</string>
+                  </property>
+                 </widget>
+                </item>
                </layout>
               </widget>
              </item>
@@ -14475,138 +14475,6 @@
                 <string>100</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_77">
-                <item>
-                 <widget class="QCheckBox" name="checkBox_224">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>10 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>100</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>10</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_397">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>15 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>100</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>15</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_399">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>20 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>100</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>20</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_400">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>25 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>100</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>25</string>
-                  </property>
-                 </widget>
-                </item>
                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
                  <widget class="QCheckBox" name="checkBox_225">
                   <property name="minimumSize">
@@ -14838,6 +14706,138 @@
                   </property>
                  </widget>
                 </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_224">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>65 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>100</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>65</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_397">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>70 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>100</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>70</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_399">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>75 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>100</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>75</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_400">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>80 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>100</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>80</string>
+                  </property>
+                 </widget>
+                </item>
                </layout>
               </widget>
              </item>
@@ -14867,138 +14867,6 @@
                 <string>075</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_78">
-                <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                 <widget class="QCheckBox" name="checkBox_230">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>10 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>075</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>10</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_407">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>15 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>075</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>15</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_408">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>20 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>075</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>20</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_409">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>25 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>075</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>25</string>
-                  </property>
-                 </widget>
-                </item>
                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
                  <widget class="QCheckBox" name="checkBox_410">
                   <property name="minimumSize">
@@ -15230,6 +15098,138 @@
                   </property>
                  </widget>
                 </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_230">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>65 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>075</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>65</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_407">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>70 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>075</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>70</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_408">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>75 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>075</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>75</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_409">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>80 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>075</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>80</string>
+                  </property>
+                 </widget>
+                </item>
                </layout>
               </widget>
              </item>
@@ -15259,138 +15259,6 @@
                 <string>050</string>
                </property>
                <layout class="QVBoxLayout" name="verticalLayout_75">
-                <item alignment="Qt::AlignmentFlag::AlignHCenter">
-                 <widget class="QCheckBox" name="checkBox_342">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>10 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>050</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>10</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_387">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>15 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>050</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>15</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_388">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>20 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>050</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>20</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QCheckBox" name="checkBox_389">
-                  <property name="minimumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="maximumSize">
-                   <size>
-                    <width>70</width>
-                    <height>20</height>
-                   </size>
-                  </property>
-                  <property name="font">
-                   <font>
-                    <pointsize>11</pointsize>
-                   </font>
-                  </property>
-                  <property name="text">
-                   <string>25 kph</string>
-                  </property>
-                  <property name="test_name" stdset="0">
-                   <string>CCRm_AEB</string>
-                  </property>
-                  <property name="overlap" stdset="0">
-                   <string>050</string>
-                  </property>
-                  <property name="vut_speed" stdset="0">
-                   <string>25</string>
-                  </property>
-                 </widget>
-                </item>
                 <item alignment="Qt::AlignmentFlag::AlignHCenter">
                  <widget class="QCheckBox" name="checkBox_343">
                   <property name="minimumSize">
@@ -15619,6 +15487,138 @@
                   </property>
                   <property name="vut_speed" stdset="0">
                    <string>60</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_342">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>65 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>050</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>65</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_387">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>70 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>050</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>70</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_388">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>75 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>050</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>75</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QCheckBox" name="checkBox_389">
+                  <property name="minimumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>70</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                  <property name="font">
+                   <font>
+                    <pointsize>11</pointsize>
+                   </font>
+                  </property>
+                  <property name="text">
+                   <string>80 kph</string>
+                  </property>
+                  <property name="test_name" stdset="0">
+                   <string>CCRm_AEB</string>
+                  </property>
+                  <property name="overlap" stdset="0">
+                   <string>050</string>
+                  </property>
+                  <property name="vut_speed" stdset="0">
+                   <string>80</string>
                   </property>
                  </widget>
                 </item>
