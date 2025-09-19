@@ -166,7 +166,7 @@ class MainWindow(QMainWindow):
             target_type = test_data["target_type"]
 
 
-            folder_name = encap_number + "_" + run_name + "-01"
+            folder_name = encap_number + "-" + run_name + "-01"
 
             test_path = active_folder / folder_name
             test_path.mkdir(parents=True, exist_ok=True)
