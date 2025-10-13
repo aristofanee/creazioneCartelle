@@ -34,7 +34,7 @@
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CPNa75En": {
+  "CPNa75nE": {
     "target_speed": 3,
     "target_type": "PEDa",
     "test_type": "AEB",
@@ -55,14 +55,14 @@
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CPNc50": {
+  "CPNcO50": {
     "target_speed": 5,
     "target_type": "PEDc",
     "test_type": "AEB",
     "vut_speed": "user_defined",
     "naming_convention": "{test_name}_{vut_speed}VUT"
   },
-  "CPNc50n": {
+  "CPNcO50n": {
     "target_speed": 5,
     "target_type": "PEDc",
     "test_type": "AEB",
