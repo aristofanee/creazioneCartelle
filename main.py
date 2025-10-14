@@ -192,7 +192,7 @@ class MainWindow(QMainWindow):
             movie_path.mkdir(parents=True, exist_ok=True)
 
             # Calls the function that fills the contents of the .mme file
-            mme_file_lines = mme_processor.mmefile_creator(self.vehicle_spec_file,
+            mme_file_lines = mme_processor.mmefile_creator(self.vehicle_spec_file,year,
                                               model, folder_name, test_name,test_identifier,
                                               vut_speed, lateral_speed, target_speed, target_type)
 
