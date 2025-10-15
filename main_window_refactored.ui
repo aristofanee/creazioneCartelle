@@ -897,7 +897,7 @@
                 <string>10 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>10</string>
@@ -927,7 +927,7 @@
                 <string>15 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>15</string>
@@ -957,7 +957,7 @@
                 <string>20 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>20</string>
@@ -987,7 +987,7 @@
                 <string>25 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>25</string>
@@ -1017,7 +1017,7 @@
                 <string>30 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>30</string>
@@ -1047,7 +1047,7 @@
                 <string>35 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>35</string>
@@ -1077,7 +1077,7 @@
                 <string>40 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>40</string>
@@ -1107,7 +1107,7 @@
                 <string>45 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>45</string>
@@ -1137,7 +1137,7 @@
                 <string>50 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>50</string>
@@ -1167,7 +1167,7 @@
                 <string>55 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>55</string>
@@ -1197,7 +1197,7 @@
                 <string>60 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50</string>
+                <string>CPNcO50</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>60</string>
@@ -2333,7 +2333,7 @@
                 <string>20 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNa75En</string>
+                <string>CPNa75nE</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>20</string>
@@ -2392,7 +2392,7 @@
                 <string>10 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>10</string>
@@ -2422,7 +2422,7 @@
                 <string>15 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>15</string>
@@ -2452,7 +2452,7 @@
                 <string>20 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>20</string>
@@ -2482,7 +2482,7 @@
                 <string>25 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>25</string>
@@ -2512,7 +2512,7 @@
                 <string>30 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>30</string>
@@ -2542,7 +2542,7 @@
                 <string>35 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>35</string>
@@ -2572,7 +2572,7 @@
                 <string>40 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>40</string>
@@ -2602,7 +2602,7 @@
                 <string>45 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>45</string>
@@ -2632,7 +2632,7 @@
                 <string>50 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>50</string>
@@ -2662,7 +2662,7 @@
                 <string>55 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>55</string>
@@ -2692,7 +2692,7 @@
                 <string>60 kph</string>
                </property>
                <property name="test_name" stdset="0">
-                <string>CPNc50n</string>
+                <string>CPNcO50n</string>
                </property>
                <property name="vut_speed" stdset="0">
                 <string>60</string>

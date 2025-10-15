@@ -179,6 +179,7 @@ class MainWindow(QMainWindow):
             target_speed = test_data["target_speed"]
             lateral_speed = test_data["lateral_speed"]
             target_type = test_data["target_type"]
+            test_type = test_data["test_type"]
 
             # Constract the full folder name
             folder_name = encap_number + "-" + run_name + "-01"
@@ -194,7 +195,7 @@ class MainWindow(QMainWindow):
             # Calls the function that fills the contents of the .mme file
             mme_file_lines = mme_processor.mmefile_creator(self.vehicle_spec_file,year,
                                               model, folder_name, test_name,test_identifier,
-                                              vut_speed, lateral_speed, target_speed, target_type)
+                                              vut_speed, lateral_speed, target_speed, target_type, test_type)
 
             # Saves the .mme file
             with open(test_path / (folder_name + ".mme"), "w", encoding="utf-8") as file:

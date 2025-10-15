@@ -1,7 +1,7 @@
 from datetime import datetime
 
 
-def mmefile_creator(specfile, year, model,folder_name,test_name, test_identifier, vut_speed,lateral_speed,target_speed,target_type):
+def mmefile_creator(specfile, year, model,folder_name,test_name, test_identifier, vut_speed,lateral_speed,target_speed,target_type, test_type):
 
     specfile_data = {}
 
@@ -23,16 +23,17 @@ def mmefile_creator(specfile, year, model,folder_name,test_name, test_identifier
     mme_lines.append("Title:\t\tEuro NCAP " + year)
     mme_lines.append("Timestamp:\t\t"+ datetime.now().strftime("%d-%b-%Y %H:%M:%S"))
 
-    if "AEB" in test_name:
-        test_type = "AEB"
-    elif "FCW" in test_name:
-        test_type = "FCW"
-    elif any(x in test_name for x in ["ELK", "LKA", "LDW"]):
-        test_type = "LSS"
-    elif "CPLa25" or "CBLa25" in test_name:
-        test_type = "FCW"
-    else:
-        test_type = "AEB"
+    
+    #if "AEB" in test_name:
+    #    test_type = "AEB"
+    #elif "FCW" in test_name:
+    #    test_type = "FCW"
+    #elif any(x in test_name for x in ["ELK", "LKA", "LDW"]):
+    #    test_type = "LSS"
+    #elif "CPLa25" or "CBLa25" in test_name:
+    #    test_type = "FCW"
+    #else:
+    #    test_type = "AEB"
 
     mme_lines.append("Type of the test:\t\t" + test_type)
     mme_lines.append("Subtype of the test:\t\t" + test_name)
