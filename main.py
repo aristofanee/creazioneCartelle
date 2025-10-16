@@ -21,7 +21,7 @@ class MainWindow(QMainWindow):
         with open(self.vehicle_spec_file, "r", encoding="utf-8") as file:
             spec_file_content = file.read()
         self.ui.textbox_vehicle_spec.setPlainText(spec_file_content)
-
+        # Commento di prova
         # Adds the radio button in a buttonGroup
         self.ui.button_group = QButtonGroup()
         self.ui.button_group.addButton(self.ui.radio_car)
